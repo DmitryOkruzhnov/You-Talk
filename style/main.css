@@ -71,10 +71,10 @@
     font-display: swap;
 }
 body{
+    position: relative;
     width: 100%;
     max-width: 90rem;
     height: auto;
-    position: relative;
     background: #ffffff;
 }
 .header{
@@ -184,7 +184,7 @@ body{
     position: absolute;
     top: 4.75rem;
     width: 100%;
-    padding: 1rem 7.875rem 96rem 7.875rem;
+    padding: 1rem 7.875rem 6rem 7.875rem;
 }
 .path__page{
     width: 6.875rem;
@@ -198,6 +198,11 @@ body{
     font-family: "Montserrat-Regular";
     font-size: 12px;
     color: rgba(51, 51, 51, 0.7);
+    transition: 0.1s;
+}
+.link__path__page:hover{
+    color: #2963A3;
+    transition: 0.1s;
 }
 .blog__title{
     font-family: "Montserrat-Bold";
@@ -216,17 +221,30 @@ body{
 .hashtag__btn{
     border: 1px solid #c1c5cd;
     border-radius: 24px;
-    padding: 6px 8px;
+    padding: 4px 8px;
     font-family: "Montserrat-SemiBold";
     font-size: 14px;
     color: #333;
     margin: 0rem 0.5rem 0.5rem 0rem;
+    display: flex;
+    transition: 0.2s
 }
 .hashtag__btn:nth-child(9){
     margin-right: 0rem;
 }
+.hashtag__btn:hover{
+    color: #000000;
+    background: #c1c5cd;
+    transition: 0.2s
+}
+.hashtag__btn:hover .hashtag__icon{
+    transform: rotate(360deg);
+    transform-origin: center;
+    transition: 1s
+}
 .hashtag__icon{
     padding-right: 0.25rem;
+    transition: 1s;
 }
 .blog__articles{
     padding-top: 1.5rem;
@@ -271,6 +289,16 @@ body{
     position: relative;
     border: 1px solid #c2c2c2;
     border-radius: 16px;
+    transition: 0.5s;
+}
+.card__article:hover{
+    background: #c0c0c059;
+    box-shadow: 0px 0px 15px #47474771;
+    transition: 0.5s;
+}
+.card__article:hover .article__title{
+    color: #000000;
+    transition: 0.5s;
 }
 .img__article{
     border-radius: 16px 16px 0 0;
@@ -281,6 +309,7 @@ body{
     font-size: 18px;
     color: #333;
     line-height: 144%;
+    transition: 0.5s;
 }
 .author{
     padding-left: 1rem;
@@ -289,6 +318,11 @@ body{
     letter-spacing: 0.02em;
     color: #494949;
     line-height: 150%;
+    transition: 0.2s;
+}
+.author:hover{
+    color: #2963A3;
+    transition: 0.2s;
 }
 .text__article{
     padding: 0.5rem 1rem 0 1rem;
@@ -329,11 +363,193 @@ body{
     border-radius: 4px;
     padding: 12px 16px;
     background: #35b3a9;
+    border: 2px solid #35b3a9;
     font-family: "Montserrat-Bold";
     font-size: 16px;
     text-align: center;
     color: #fff;
+    transition: 0.3s;
 }
+.other__articles:hover{
+    background: #ffffff;
+    color: #35b3a9;
+    transition: 0.3s;
+}
+.footer{
+    position: absolute;
+    top: 125rem;
+    width: 100%;
+    max-width: 90rem;
+    height: 18.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #2963a3;
+}
+.contacts{
+    width: 75rem;
+    padding-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__nav{
+    width: 100%;
+    max-width: 19.375rem;
+    height: 11.5rem;
+}
+.menu__footer__nav{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item__menu__footer{
+    padding-top: 1rem;
+}
+.item__menu__footer:nth-child(1),
+.item__menu__footer:nth-child(6){
+    padding-top: 0;
+}
+.item__menu__footer:nth-child(1),
+.item__menu__footer:nth-child(2),
+.item__menu__footer:nth-child(3),
+.item__menu__footer:nth-child(4),
+.item__menu__footer:nth-child(5){
+    padding-right: 5.8125rem;
+}
+.link__menu__footer{
+    position: relative;
+    display: inline-block;
+    font-family: "Montserrat-Bold";
+    font-size: 16px;
+    line-height: 150%;
+    color: #ffffff;
+}
+.border__bottom__footer{
+    position: absolute;
+    width: 0%;
+    height: 120%;
+    border-bottom: 2px solid #ffffff;
+    z-index: 6;
+    transition: 0.3s;
+}
+.link__menu__footer:hover .border__bottom__footer{
+    width: 100%;
+    transition: 0.3s;
+}
+.form{
+    width: 30.375rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5.72rem;
+}
+.form__title{
+    font-family: "Montserrat-Bold";
+    font-size: 18px;
+    line-height: 144%;
+    color: #ffffff;
+}
+.email__input{
+    padding: 0 1rem;
+    width: 21rem;
+    height: 3rem;
+    border: 1px solid rgba(157, 157, 157, 0.2);
+    border-radius: 4px;
+    background: #ffffff;
+}
+.email__input::placeholder{
+    font-family: "Montserrat-Regular";
+    padding: 0 1rem;
+    font-size: 14px;
+    color: #9d9d9d;
+}
+.email__btn{
+    position: relative;
+    margin-top: -3rem;
+    width: 4rem;
+    margin-left: 20rem;
+    border-radius: 4px;
+}
+.icon__email__btn{
+    width: 4rem;
+    height: 3rem;
+    border-radius: 4px;
+    background: #16c8bb;
+    transition: 0.2s;
+}
+.icon__email__btn__svg{
+    transition: 0.2s;
+}
+.icon__email__btn:hover{
+    background: #ffffff;
+    box-shadow: 0 0 5px #16c8bb;
+    transition: 0.2s;
+}
+.email__btn:hover .icon__email__btn__svg{
+    fill: #16c8bb;
+    transition: 0.2s;
+}
+.personal__data__processing{
+    padding-top: 0.5rem;
+    font-family: "Montserrat-Regular";
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #fff;
+    opacity: 0.7;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+}
+.socials__icons{
+    padding-top: 2.5rem;
+}
+.link__socials{
+    padding-right: 1rem;
+}
+.path__icon,
+.dzen,
+.link__socials__svg{
+    transition: 0.3s;
+}
+.link__socials__svg{
+    border-radius: 50%;
+}
+.link__socials__svg:hover{
+    box-shadow: 0 0 5px #ffffff;
+}
+.link__socials:hover .path__icon{
+    fill: #007bff;
+    transition: 0.3s;
+}
+.link__socials:hover .dzen{
+    fill: #fbff00;
+    transition: 0.3s;
+}
+.juridical__info{
+    padding: 1.5rem 0 1rem 0;
+    width: 75rem;
+    border-top: 1px solid #9d9d9d4c;
+}
+.copy__juridical__info,
+.link__juridical__info{
+    font-family: "Montserrat-Regular";
+    font-size: 14px;
+    color: #fff;
+    opacity: 0.7;
+}
+.link__juridical__info{
+    padding-left: 3rem;
+    transition: 0.2s;
+}
+.link__juridical__info:hover{
+    color: #bbbbbb;
+    transition: 0.2s;
+}
+
 
 @media(max-width: 1241px){
     .header{
