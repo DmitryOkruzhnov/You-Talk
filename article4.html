@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Talk</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/reset.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        
+        <header class="header">
+            <div class="logo"><a href="#"><svg class="logo__svg" width="51" height="36" viewBox="0 0 51 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_4492_2245)">
+                <path class="path" d="M13.3302 1.2804C13.3303 1.11943 13.2953 0.960409 13.2279 0.814578C13.1604 0.668747 13.0621 0.539666 12.9398 0.436463C12.6952 0.205117 12.3717 0.0779848 12.0367 0.0815367C11.8038 0.0777518 11.5746 0.140646 11.3756 0.262943C11.1562 0.404074 10.9896 0.614972 10.902 0.862374L6.73786 10.2114L2.56334 0.84397C2.47188 0.611079 2.31107 0.412633 2.10314 0.276053C1.89521 0.139474 1.65042 0.0715042 1.40259 0.0815367C1.04757 0.079776 0.703499 0.205576 0.431833 0.436463C0.296375 0.538044 0.186622 0.670551 0.111538 0.823162C0.036454 0.975774 -0.00183214 1.14416 -0.000193683 1.31458C-0.00164511 1.48194 0.034856 1.64742 0.106512 1.79833L5.31166 12.9772L3.45342 16.9839C3.3752 17.1552 3.3293 17.3398 3.31809 17.5281C3.31575 17.6859 3.35009 17.8421 3.41834 17.9841C3.48659 18.1261 3.58685 18.25 3.71107 18.3458C3.95587 18.5555 4.26716 18.6694 4.58814 18.6665C4.82369 18.6655 5.05368 18.5941 5.24919 18.4614C5.46262 18.3199 5.62866 18.1164 5.72546 17.8778L13.2235 1.79833C13.2944 1.63509 13.3308 1.45867 13.3302 1.2804Z"/>
+                <path class="path" d="M39.5071 12.5118C39.4991 12.6807 39.5263 12.8493 39.5868 13.0069C39.6473 13.1645 39.7399 13.3075 39.8585 13.4267C39.982 13.5416 40.1267 13.6306 40.2844 13.6888C40.442 13.747 40.6095 13.7732 40.7772 13.7659C41.1428 13.7818 41.5002 13.6536 41.774 13.4083C41.9002 13.2915 42.0001 13.1486 42.067 12.9894C42.1339 12.8302 42.1662 12.6584 42.1618 12.4855V1.3908C42.1708 1.21084 42.1431 1.03093 42.0804 0.862232C42.0178 0.693535 41.9214 0.539656 41.7974 0.410152C41.5163 0.179307 41.1644 0.0543847 40.8022 0.0567829C40.4399 0.0591811 40.0897 0.188751 39.8116 0.423298C39.6856 0.549219 39.587 0.700291 39.522 0.866874C39.457 1.03346 39.4271 1.21189 39.4343 1.3908V7.79787C39.4343 8.94064 39.115 9.85819 38.4765 10.5505C38.1492 10.8971 37.7523 11.1689 37.3123 11.3476C36.8724 11.5262 36.3997 11.6077 35.926 11.5864C35.029 11.5864 34.3636 11.3322 33.9298 10.8239C33.4961 10.3157 33.28 9.52693 33.2818 8.45777V1.3908C33.2908 1.21084 33.2631 1.03093 33.2005 0.862232C33.1378 0.693535 33.0414 0.539656 32.9174 0.410152C32.7839 0.287248 32.6274 0.192539 32.4571 0.131589C32.2868 0.0706386 32.1062 0.0446762 31.9258 0.0552264C31.7423 0.044194 31.5584 0.0698661 31.3846 0.130771C31.2109 0.191677 31.0508 0.286617 30.9134 0.410152C30.7882 0.538814 30.6911 0.692558 30.6284 0.861466C30.5656 1.03037 30.5386 1.2107 30.5491 1.3908V8.48932C30.5491 12.0508 32.1505 13.8316 35.3534 13.8316C36.2042 13.8433 37.0441 13.6371 37.7946 13.2322C38.523 12.833 39.1186 12.2258 39.5071 11.4865V12.5118Z"/>
+                <path class="path" d="M15.3551 33.8917L14.5977 33.8364C13.8794 33.7821 13.3442 33.5551 12.992 33.1555C12.6432 32.7559 12.4714 32.1275 12.4714 31.2731V24.6767H15.1339C15.4483 24.7007 15.7604 24.6071 16.0109 24.4138C16.1171 24.3137 16.2 24.191 16.2536 24.0546C16.3071 23.9182 16.33 23.7715 16.3207 23.6251C16.329 23.4788 16.3055 23.3324 16.2521 23.1962C16.1986 23.0599 16.1163 22.9371 16.0109 22.8364C15.7647 22.6328 15.4515 22.5305 15.1339 22.5498H12.461V19.7419C12.4712 19.5607 12.4427 19.3794 12.3776 19.2103C12.3125 19.0411 12.2123 18.888 12.0837 18.7613C11.8092 18.5154 11.4508 18.3871 11.0843 18.4037C10.9052 18.3942 10.7261 18.4207 10.5572 18.4817C10.3883 18.5426 10.2331 18.6367 10.1005 18.7587C9.97531 18.8873 9.8782 19.0411 9.81544 19.21C9.75268 19.3789 9.72567 19.5592 9.73614 19.7393V22.5498H8.11734C7.79965 22.5299 7.48629 22.6323 7.24028 22.8364C7.13405 22.9366 7.05098 23.0592 6.997 23.1955C6.94302 23.3319 6.91945 23.4785 6.92797 23.6251C6.92797 24.3262 7.32443 24.6767 8.11734 24.6767H9.73614V31.0838C9.73614 32.6271 10.0953 33.797 10.8162 34.5857C11.5371 35.3745 12.6224 35.8267 14.0798 35.9371L14.8086 35.9897C15.2321 36.0514 15.6639 35.9701 16.037 35.7583C16.1722 35.6685 16.282 35.5447 16.3555 35.399C16.4289 35.2533 16.4636 35.0908 16.456 34.9275C16.4634 34.7955 16.4441 34.6633 16.3994 34.539C16.3547 34.4147 16.2854 34.3009 16.1957 34.2045C15.959 34.0065 15.6624 33.8961 15.3551 33.8917Z"/>
+                <path class="path" d="M36.0118 16.4976C35.6534 16.4854 35.3031 16.6071 35.028 16.8394C34.8939 16.9653 34.7892 17.1198 34.7217 17.2917C34.6541 17.4637 34.6254 17.6486 34.6376 17.8332V34.683C34.6246 34.8657 34.6529 35.0489 34.7206 35.2189C34.7882 35.3888 34.8934 35.5409 35.028 35.6636C35.3067 35.8877 35.6558 36.0034 36.0118 35.9896C36.3648 36.0049 36.7111 35.8889 36.9851 35.6636C37.1159 35.5385 37.2176 35.3857 37.2828 35.2161C37.3481 35.0465 37.3753 34.8644 37.3625 34.683V17.8332C37.3745 17.6498 37.347 17.466 37.2819 17.2944C37.2167 17.1228 37.1155 16.9676 36.9851 16.8394C36.7147 16.606 36.3672 16.484 36.0118 16.4976Z"/>
+                <path class="path" d="M50.5131 33.6997L45.2247 28.9831L50.0291 24.54C50.1683 24.4229 50.2814 24.2773 50.3608 24.1128C50.4402 23.9482 50.4841 23.7686 50.4897 23.5856C50.4811 23.2483 50.3445 22.9273 50.1081 22.689C49.8716 22.4506 49.5536 22.3133 49.2197 22.3053C48.8832 22.327 48.5664 22.473 48.3296 22.7154L42.1771 28.5204V17.8332C42.1897 17.6498 42.1624 17.4658 42.0972 17.2941C42.032 17.1225 41.9305 16.9673 41.7997 16.8394C41.5303 16.606 41.1836 16.4839 40.829 16.4976C40.4698 16.4853 40.1186 16.6069 39.8426 16.8394C39.7085 16.9653 39.6038 17.1198 39.5363 17.2918C39.4687 17.4637 39.44 17.6487 39.4522 17.8332V34.6593C39.44 34.8443 39.4687 35.0296 39.5362 35.202C39.6037 35.3743 39.7084 35.5293 39.8426 35.6557C40.119 35.8873 40.4701 36.008 40.829 35.9949C41.1833 36.0094 41.53 35.8882 41.7997 35.6557C41.9306 35.5273 42.0321 35.3717 42.0973 35.1996C42.1624 35.0275 42.1897 34.8431 42.1771 34.6593V29.6115L48.8969 35.6084C49.1412 35.8532 49.4716 35.9903 49.8156 35.9896C49.9738 35.9905 50.1303 35.9568 50.2745 35.891C50.4187 35.8253 50.5471 35.7289 50.6511 35.6084C50.8844 35.3667 51.0135 35.0416 51.0102 34.704C51.0095 34.5092 50.9643 34.3173 50.8781 34.1431C50.7918 33.9689 50.667 33.8171 50.5131 33.6997Z"/>
+                <path class="path" d="M15.3343 13.8212H22.33C23.5218 13.8473 24.6994 13.5563 25.7446 12.9773C26.719 12.417 27.5076 11.5782 28.0114 10.5664C28.5603 9.4342 28.8325 8.18555 28.8052 6.92515C28.8357 5.65685 28.5634 4.39979 28.0114 3.26021C27.5092 2.24593 26.7203 1.40505 25.7446 0.844087C24.6994 0.265099 23.5218 -0.0259512 22.33 0.000152312H20.1204C18.9295 -0.0259836 17.7527 0.265083 16.7085 0.844087C15.7316 1.40353 14.9423 2.24482 14.4416 3.26021C13.8888 4.39956 13.6156 5.65664 13.6452 6.92515V10.7794C13.6452 13.001 14.2074 13.8212 15.3343 13.8212ZM17.3695 3.41796C18.0184 2.61171 18.9354 2.20858 20.1204 2.20858H22.33C23.5168 2.20858 24.4346 2.61346 25.0835 3.42322C25.7325 4.23297 26.056 5.40028 26.0543 6.92515C26.0543 8.4693 25.7351 9.64099 25.0966 10.4402C24.4581 11.2395 23.5359 11.64 22.33 11.6417H16.43C16.43 11.6417 16.3962 8.46842 16.3962 6.92515C16.3962 5.38188 16.7215 4.23034 17.3695 3.41796Z"/>
+                <path class="path" d="M29.6094 23.023C28.5657 22.4423 27.3887 22.1502 26.1974 22.1764H23.9878C22.7959 22.1515 21.6184 22.4434 20.5733 23.023C19.5977 23.5829 18.8087 24.4229 18.3064 25.4365C17.7604 26.5777 17.4927 27.8343 17.5257 29.1014C17.4952 30.3607 17.7629 31.609 18.3064 32.7427C18.8095 33.755 19.5983 34.594 20.5733 35.1536C21.6186 35.7322 22.7961 36.0232 23.9878 35.9975H30.9836C32.1131 35.9975 32.6726 35.1772 32.6726 32.9478V29.1014C32.7029 27.8328 32.4297 26.5756 31.8762 25.4365C31.3756 24.4218 30.5862 23.5813 29.6094 23.023ZM29.8879 33.818H23.9878C22.7855 33.818 21.8633 33.4184 21.2213 32.6191C20.5793 31.8199 20.261 30.6473 20.2662 29.1014C20.2662 27.5731 20.5898 26.4057 21.2369 25.5995C21.8841 24.7932 22.8011 24.3884 23.9878 24.3849H26.1974C27.3842 24.3849 28.302 24.7897 28.951 25.5995C29.5999 26.4092 29.9261 27.5766 29.9295 29.1014C29.9295 30.6447 29.8879 33.818 29.8879 33.818Z"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_4492_2245">
+                <rect width="51" height="36" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg></a>
+                </div>
+            <nav class="navigation">
+                <ul class="menu">
+                    <li class="menu__item"><a href="#" class="menu__link"><div class="border__bottom"></div>О нас</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link"><div class="border__bottom"></div>Тарифы</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link"><div class="border__bottom"></div>Для бизнеса</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link"><div class="border__bottom"></div>Психологам</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link"><div class="border__bottom"></div>Сертификат</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link"><div class="border__bottom"></div>Материалы<svg class="materials_svg" width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="materials__path" d="M1.09998 0.899902L5.99998 5.0999L10.9 0.899902" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" /></svg></a></li>
+                    <li class="menu__item"><a href="#" class="menu__link"><div class="border__bottom"></div>FAQ</a></li>
+                </ul>
+            </nav>
+            <button class="header__btn">Подобрать психолога</button>
+            <button class="burger__menu">
+                <div class="line__menu line__menu__top"></div>
+                <div class="line__menu line__menu__midle"></div>
+                <div class="line__menu line__menu__bottom"></div>
+            </button>
+        </header>
+        <main class="main">
+            <img src="./image/img_articles/background__article.png" alt="background" class="background__article">
+            <div class="path__page__overflow__x">
+                <div class="path__page">
+                <a href="#" class="link__path__page">Главная</a>
+                <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.8125 10.6875L2.375 9.125L5.5 6L2.375 2.875L0.8125 1.3125" stroke="#333333" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <a href="#" class="link__path__page">Блог</a>
+                <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.8125 10.6875L2.375 9.125L5.5 6L2.375 2.875L0.8125 1.3125" stroke="#333333" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <a href="#" class="link__path__page">Как не утонуть в тревоге и управлять своими страхами</a>
+                </div>
+            </div>
+            <div class="main__content">
+                <div class="article__page">
+                    <h1 class="article__page__title">Как не утонуть в тревоге и управлять своими страхами</h1>
+                    <div class="author__date">
+                        <a href="#" class="author__article author__date__elem">Автор: Лиза Файнтух</a>
+                        <svg width="2" height="2" viewBox="0 0 2 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.764 1.976C0.549333 1.976 0.372 1.906 0.232 1.766C0.0920001 1.61667 0.0220001 1.43 0.0220001 1.206C0.0220001 0.982 0.0920001 0.8 0.232 0.66C0.372 0.510667 0.549333 0.436 0.764 0.436C0.978667 0.436 1.156 0.510667 1.296 0.66C1.44533 0.8 1.52 0.982 1.52 1.206C1.52 1.43 1.44533 1.61667 1.296 1.766C1.156 1.906 0.978667 1.976 0.764 1.976Z" fill="#494949"/>
+                        </svg>
+                        <a href="#" class="article__page__date author__date__elem">21.08.2021</a>
+                        <svg width="2" height="2" viewBox="0 0 2 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.764 1.976C0.549333 1.976 0.372 1.906 0.232 1.766C0.0920001 1.61667 0.0220001 1.43 0.0220001 1.206C0.0220001 0.982 0.0920001 0.8 0.232 0.66C0.372 0.510667 0.549333 0.436 0.764 0.436C0.978667 0.436 1.156 0.510667 1.296 0.66C1.44533 0.8 1.52 0.982 1.52 1.206C1.52 1.43 1.44533 1.61667 1.296 1.766C1.156 1.906 0.978667 1.976 0.764 1.976Z" fill="#494949"/>
+                        </svg>
+                        <a href="#" class="hashtag__link author__date__elem">Self</a>
+                    </div>
+                    <img class="article__page__img" src="./image/img_articles/article.png" alt="Как не утонуть в тревоге и управлять своими страхами">
+                    <h4 class="article__page__content">Содержание</h4>
+                    <ul class="content__ul">
+                        <li class="content__li"><a class="content__li__link" href="#">Как понять, что отношения с мамой были дисфункциональными и привели к травме?</a></li>
+                        <li class="content__li"><a class="content__li__link" href="#">Мама привет!</a>
+                            <ul class="under__content__ul">
+                                <li class="content__li under__content__li"><a class="content__li__link" href="#">Под под заголовок под заголовком</a>
+                                    <ul class="under__content__ul">
+                                        <li class="content__li under__content__li">
+                                            <a class="content__li__link" href="#">Под под под заголовок под заголовком</a>
+                                            <ul class="under__content__ul">
+                                                <li class="content__li under__content__li">
+                                                    <a class="content__li__link" href="#">Под под под под заголовок под заголовком</a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="content__li">
+                            <a class="content__li__link" href="#">Ну вот опять заголовок который как «привет мама»</a>
+                        </li>
+                        <li class="content__li">
+                            <a class="content__li__link" href="#">Как понять, что вы страдаете от материнской травмы?</a>
+                        </li>
+                    </ul>
+                    <h3 class="section__title">Заголовок h3</h3>
+                    <p class="section__content">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться со своими эмоциями.  Снять этот процесс с автопилота и перевести его в поле сознания.</p>
+                    <p class="section__content">Давайте, к примеру, разберем тревогу. Можно разложить перед собой целую коллекцию доступных реакций и выбрать нужную:</p>
+                    <div class="citation">
+                        <svg class="citation__svg" width="56" height="36" viewBox="0 0 56 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.06" d="M20.4354 15.3529C21.8727 16.2941 22.9664 17.5 23.7163 18.9706C24.4662 20.3824 24.8412 21.9706 24.8412 23.7353C24.8412 27.3824 23.5601 30.3529 20.9978 32.6471C18.4356 34.8824 15.2797 36 11.5301 36C8.09292 36 5.31195 35.0294 3.18717 33.0882C1.06239 31.1471 0 28.6176 0 25.5C0 23.9118 0.312468 22.3824 0.937404 20.9118C1.56234 19.4412 2.71847 17.5588 4.4058 15.2647L15.4672 0H28.5908L20.4354 15.3529ZM47.6201 15.3529C49.0574 16.2941 50.1511 17.5 50.901 18.9706C51.6509 20.3824 52.0259 21.9706 52.0259 23.7353C52.0259 27.3824 50.7448 30.3529 48.1825 32.6471C45.6203 34.8824 42.4644 36 38.7148 36C35.2776 36 32.4967 35.0294 30.3719 33.0882C28.2471 31.1471 27.1847 28.6176 27.1847 25.5C27.1847 23.9118 27.4972 22.3824 28.1221 20.9118C28.747 19.4412 29.9032 17.5588 31.5905 15.2647L42.6519 0H55.7755L47.6201 15.3529Z" fill="#333333" />
+                        </svg>
+                        <span class="citation__content">Мы знаем, что нуждаться в помощи и поддержке в трудные периоды жизни абсолютно нормально для любого человека, и стремимся сделать психотерапию безопасной, удобной и доступной каждому</span>
+                        <span class="citation__author">Ана Крымская</span>
+                    </div>
+                    <h3 class="section__title">Что еще можно делать с тревогой?</h3>
+                    <ul>
+                        <li class="section__content">Управлять ей через что-то внешнее: включать музыку, которая создает другое настроение, сесть за работу с цифрами, которая быстренько активизирует другие участки мозга, читать блоги, которые вас успокаивают и отвлекают.</li>
+                        <li class="section__content">А еще порой можно разрешить себе тревогу заесть чем-то вкусным. Это, конечно, не самая здоровая стратегия, но в ряде ситуаций можно считать ее вполне рабочей. Особенно, когда внутренний ресурс на нуле, а поддерживающее окружение не в доступе.</li>
+                    </ul>
+                    <img class="article__page__img" src="./image/img_articles/article_content.png" alt="Онтогенез речи отражает групповой эриксоновский гипноз.">
+                    <span class="img__label">Онтогенез речи отражает групповой эриксоновский гипноз.</span>
+                    <p class="section__content">Чем шире доступный вам репертуар реакций и чем более осознанно вы можете выбирать из него то, что лучше всего подойдет в каждой конкретной ситуации, тем больше будет ваша устойчивость к стрессу, депрессии, неопределенности, да и к жизни в целом.</p>
+                    <div class="footnote">
+                        <svg class="footnote_svg" width="241" height="168" viewBox="0 0 241 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M240.219 89.2085C228.379 -4.63565 166.261 -4.64452 101.174 3.03562C36.088 10.7158 8.49893 36.3869 1.55027 69.2546C-5.39839 102.122 22.3612 160.543 78.0336 167.097C133.706 173.652 162.074 142.299 184.985 143.914C207.896 145.529 244.044 119.5 240.219 89.2085Z" fill="#FFEDEE" />
+                        </svg>
+                        <span class="footnote__content">Мы знаем, что нуждаться в помощи и поддержке в трудные периоды жизни абсолютно нормально для любого человека, и стремимся сделать психотерапию безопасной, удобной и доступной каждому</span>
+                    </div>
+                    <p class="section__content">Одна из ключевых задач психотерапии как раз и заключается в том, чтобы этот репертуар расширять и обучать человека пользоваться доступными ему реакциями в той последовательности, пропорции и объеме, которые подходят именно ему. Без оглядки на то, "как правильно" или "как у других".</p>
+                    <div class="foto__content">
+                        <img src="./image/img_articles/foto__author.png" alt="Лиза Файнтух" class="foto__author">
+                        <p class="section__content">Чем шире доступный вам репертуар реакций и чем более осознанно вы можете выбирать из него то, что лучше всего подойдет в каждой конкретной ситуации, тем больше будет ваша устойчивость к стрессу, депрессии, неопределенности, да и к жизни в целом. А еще порой можно разрешить себе тревогу заесть чем-то вкусным.</p>
+                    </div>
+                    <p class="section__content section__content__exercise__top">Чем шире доступный вам репертуар реакций и чем более осознанно вы можете выбирать из него то, что лучше всего подойдет в каждой конкретной ситуации, тем больше будет ваша устойчивость к стрессу, депрессии, неопределенности, да и к жизни в целом.</p>
+                    <div class="exercise">
+                        <h4 class="exercise__title">Упражнение #1</h4>
+                        <p class="exercise__content">Нужно последовательно напрягать и расслаблять каждую мышцу в теле на несколько секунд. Напрягать стоит довольно сильно, чтобы потом отчетливее ощущать расслабляющий эффект. Начать можно с пальцев ног и постепенно подниматься вверх. Смысл в том, чтобы через напряжение дать стрессу выход, а затем вновь привести себя в спокойное состояние через расслабление</p>
+                    </div>
+                    <h3 class="section__title">Что еще можно делать с тревогой?</h3>
+                    <ul class="content__ul section__content__ul">
+                        <li class="content__li section__content">Управлять ей через что-то внешнее: включать музыку, которая создает другое настроение, сесть за работу с цифрами, которая быстренько активизирует другие участки мозга, читать блоги, которые вас успокаивают и отвлекают.</li>
+                        <li class="content__li section__content">А еще порой можно разрешить себе тревогу заесть чем-то вкусным. Это, конечно, не самая здоровая стратегия, но в ряде ситуаций можно считать ее вполне рабочей. Особенно, когда внутренний ресурс на нуле, а поддерживающее окружение не в доступе.</li>
+                    </ul>
+                    <div class="foto__content">
+                        <img src="./image/img_articles/foto_article.png" alt="Что еще можно делать с тревогой?" class="foto__article">
+                        <p class="section__content">Чем шире доступный вам репертуар реакций и чем более осознанно вы можете выбирать из него то, что лучше всего подойдет в каждой конкретной ситуации, тем больше будет ваша устойчивость к стрессу.</p>
+                    </div>
+                    <p class="section__content section__content__exercise__top">Чем шире доступный вам репертуар реакций и чем более осознанно вы можете выбирать из него то, что лучше всего подойдет в каждой конкретной ситуации, тем больше будет ваша устойчивость к стрессу, депрессии, неопределенности, да и к жизни в целом.</p>
+                    <div class="exercise">
+                        <h4 class="exercise__title">Упражнение #2</h4>
+                        <p class="exercise__content">Нужно последовательно напрягать и расслаблять каждую мышцу в теле на несколько секунд. Напрягать стоит довольно сильно, чтобы потом отчетливее ощущать расслабляющий эффект. Начать можно с пальцев ног и постепенно подниматься вверх. Смысл в том, чтобы через напряжение дать стрессу выход, а затем вновь привести себя в спокойное состояние через расслабление</p>
+                    </div>
+                    <div class="card__section">
+                        <div class="card__article__content1">
+                        <img src="./image/img_articles/card__article__content1.png" alt="Как не утонуть в тревоге и управлять своими страхами" class="card__article__content__img">
+                        <p class="section__content">Чем шире доступный вам репертуар реакций и чем более осознанно вы можете выбирать из него то, что лучше всего подойдет в каждой конкретной ситуации, тем больше будет ваша устойчивость к стрессу, депрессии, неопределенности, да и к жизни в целом.</p>
+                    </div>
+                        <div class="card__article__content2">
+                        <img src="./image/img_articles/card__article__content2.png" alt="Как не утонуть в тревоге и управлять своими страхами" class="card__article__content__img">
+                        <p class="section__content">Чем шире доступный вам репертуар реакций и чем более осознанно вы можете выбирать из него то, что лучше всего подойдет в каждой конкретной ситуации, тем больше будет ваша устойчивость к стрессу, депрессии, неопределенности, да и к жизни в целом.</p>
+                    </div>
+                        <svg class="card__section__svg" width="178" height="36" viewBox="0 0 178 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="112" y1="17.5" x2="178" y2="17.5" stroke="#0063A8"/>
+                        <line y1="17.5" x2="66" y2="17.5" stroke="#0063A8"/>
+                        <circle cx="89" cy="18" r="16" stroke="#0063A8" stroke-width="2.76396" stroke-dasharray="0.98 8.39"/>
+                        <mask id="path-4-inside-1_4492_267" fill="white">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M88.0139 6.81253L81.1081 19.9673C80.7586 20.6332 81.2415 21.4321 81.9935 21.4321H85.6764L85.4965 27.9453C85.4379 30.0635 88.2816 30.8063 89.2665 28.9302L96.1723 15.7754C96.5219 15.1095 96.0389 14.3106 95.2869 14.3106H91.604L91.784 7.79739C91.8425 5.67922 88.9988 4.93637 88.0139 6.81253Z"/>
+                        </mask>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M88.0139 6.81253L81.1081 19.9673C80.7586 20.6332 81.2415 21.4321 81.9935 21.4321H85.6764L85.4965 27.9453C85.4379 30.0635 88.2816 30.8063 89.2665 28.9302L96.1723 15.7754C96.5219 15.1095 96.0389 14.3106 95.2869 14.3106H91.604L91.784 7.79739C91.8425 5.67922 88.9988 4.93637 88.0139 6.81253Z" fill="#FFDF4E"/>
+                        <path d="M81.1081 19.9673L82.337 20.6124L81.1081 19.9673ZM88.0139 6.81253L89.2427 7.45762V7.45762L88.0139 6.81253ZM85.6764 21.4321L87.0638 21.4705L87.1032 20.0443H85.6764V21.4321ZM85.4965 27.9453L84.1091 27.907L85.4965 27.9453ZM89.2665 28.9302L88.0377 28.2851L89.2665 28.9302ZM96.1723 15.7754L97.4011 16.4204L96.1723 15.7754ZM91.604 14.3106L90.2167 14.2722L90.1773 15.6984H91.604V14.3106ZM91.784 7.79739L93.1713 7.83572L91.784 7.79739ZM82.337 20.6124L89.2427 7.45762L86.7851 6.16745L79.8793 19.3223L82.337 20.6124ZM81.9935 20.0443C82.2852 20.0443 82.4725 20.3542 82.337 20.6124L79.8793 19.3223C79.0446 20.9123 80.1978 22.82 81.9935 22.82V20.0443ZM85.6764 20.0443H81.9935V22.82H85.6764V20.0443ZM86.8838 27.9836L87.0638 21.4705L84.2891 21.3938L84.1091 27.907L86.8838 27.9836ZM88.0377 28.2851C87.7363 28.8593 86.8659 28.632 86.8838 27.9836L84.1091 27.907C84.01 31.495 88.827 32.7534 90.4954 29.5753L88.0377 28.2851ZM94.9435 15.1303L88.0377 28.2851L90.4954 29.5753L97.4011 16.4204L94.9435 15.1303ZM95.2869 15.6984C94.9952 15.6984 94.8079 15.3885 94.9435 15.1303L97.4011 16.4204C98.2358 14.8304 97.0827 12.9227 95.2869 12.9227V15.6984ZM91.604 15.6984H95.2869V12.9227H91.604V15.6984ZM90.3966 7.75906L90.2167 14.2722L92.9913 14.3489L93.1713 7.83572L90.3966 7.75906ZM89.2427 7.45762C89.5442 6.88339 90.4146 7.11074 90.3966 7.75906L93.1713 7.83572C93.2704 4.24771 88.4535 2.98934 86.7851 6.16745L89.2427 7.45762Z" fill="#0063A8" mask="url(#path-4-inside-1_4492_267)"/>
+                    </svg>
+                    </div>
+                    <p class="section__content">Одна из ключевых задач психотерапии как раз и заключается в том, чтобы этот репертуар расширять и обучать человека пользоваться доступными ему реакциями в той последовательности, пропорции и объеме, которые подходят именно ему. Без оглядки на то, "как правильно" или "как у других".</p>
+                    <div class="exercise">
+                        <h4 class="exercise__title">Упражнение #1</h4>
+                        <p class="exercise__content">Нужно последовательно напрягать и расслаблять каждую мышцу в теле на несколько секунд. Напрягать стоит довольно сильно, чтобы потом отчетливее ощущать расслабляющий эффект. Начать можно с пальцев ног и постепенно подниматься вверх. Смысл в том, чтобы через напряжение дать стрессу выход, а затем вновь привести себя в спокойное состояние через расслабление</p>
+                    </div>
+                    <div class="article__hashtags">
+                        <a href="#" class="article__hashtags__link">Self</a>
+                        <svg width="2" height="2" viewBox="0 0 2 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.764 1.976C0.549333 1.976 0.372 1.906 0.232 1.766C0.0920001 1.61667 0.0220001 1.43 0.0220001 1.206C0.0220001 0.982 0.0920001 0.8 0.232 0.66C0.372 0.510667 0.549333 0.436 0.764 0.436C0.978667 0.436 1.156 0.510667 1.296 0.66C1.44533 0.8 1.52 0.982 1.52 1.206C1.52 1.43 1.44533 1.61667 1.296 1.766C1.156 1.906 0.978667 1.976 0.764 1.976Z" fill="#494949"/>
+                        </svg>
+                        <a href="#" class="article__hashtags__link">Самооценка и самопринятие</a>
+                        <svg width="2" height="2" viewBox="0 0 2 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.764 1.976C0.549333 1.976 0.372 1.906 0.232 1.766C0.0920001 1.61667 0.0220001 1.43 0.0220001 1.206C0.0220001 0.982 0.0920001 0.8 0.232 0.66C0.372 0.510667 0.549333 0.436 0.764 0.436C0.978667 0.436 1.156 0.510667 1.296 0.66C1.44533 0.8 1.52 0.982 1.52 1.206C1.52 1.43 1.44533 1.61667 1.296 1.766C1.156 1.906 0.978667 1.976 0.764 1.976Z" fill="#494949"/>
+                        </svg>
+                        <a href="#" class="article__hashtags__link">Самооценка и самопринятие</a>
+                        <svg width="2" height="2" viewBox="0 0 2 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.764 1.976C0.549333 1.976 0.372 1.906 0.232 1.766C0.0920001 1.61667 0.0220001 1.43 0.0220001 1.206C0.0220001 0.982 0.0920001 0.8 0.232 0.66C0.372 0.510667 0.549333 0.436 0.764 0.436C0.978667 0.436 1.156 0.510667 1.296 0.66C1.44533 0.8 1.52 0.982 1.52 1.206C1.52 1.43 1.44533 1.61667 1.296 1.766C1.156 1.906 0.978667 1.976 0.764 1.976Z" fill="#494949"/>
+                        </svg>
+                        <a href="#" class="article__hashtags__link">Упражнения</a>
+                        <svg width="2" height="2" viewBox="0 0 2 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.764 1.976C0.549333 1.976 0.372 1.906 0.232 1.766C0.0920001 1.61667 0.0220001 1.43 0.0220001 1.206C0.0220001 0.982 0.0920001 0.8 0.232 0.66C0.372 0.510667 0.549333 0.436 0.764 0.436C0.978667 0.436 1.156 0.510667 1.296 0.66C1.44533 0.8 1.52 0.982 1.52 1.206C1.52 1.43 1.44533 1.61667 1.296 1.766C1.156 1.906 0.978667 1.976 0.764 1.976Z" fill="#494949"/>
+                        </svg>
+                        <a href="#" class="article__hashtags__link">Чувства и эмоции</a>
+                        <svg width="2" height="2" viewBox="0 0 2 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.764 1.976C0.549333 1.976 0.372 1.906 0.232 1.766C0.0920001 1.61667 0.0220001 1.43 0.0220001 1.206C0.0220001 0.982 0.0920001 0.8 0.232 0.66C0.372 0.510667 0.549333 0.436 0.764 0.436C0.978667 0.436 1.156 0.510667 1.296 0.66C1.44533 0.8 1.52 0.982 1.52 1.206C1.52 1.43 1.44533 1.61667 1.296 1.766C1.156 1.906 0.978667 1.976 0.764 1.976Z" fill="#494949"/>
+                        </svg>
+                        <a href="#" class="article__hashtags__link">Самооценка и самопринятие</a>
+                        <svg width="2" height="2" viewBox="0 0 2 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.764 1.976C0.549333 1.976 0.372 1.906 0.232 1.766C0.0920001 1.61667 0.0220001 1.43 0.0220001 1.206C0.0220001 0.982 0.0920001 0.8 0.232 0.66C0.372 0.510667 0.549333 0.436 0.764 0.436C0.978667 0.436 1.156 0.510667 1.296 0.66C1.44533 0.8 1.52 0.982 1.52 1.206C1.52 1.43 1.44533 1.61667 1.296 1.766C1.156 1.906 0.978667 1.976 0.764 1.976Z" fill="#494949"/>
+                        </svg>
+                        <a href="#" class="article__hashtags__link">Тревога</a>
+                    </div>
+                    
+                </div>
+                <hr class="hr">
+                <div class="selection">
+                    
+                    <div class="selection__information">
+                        <h2 class="selection__title">Откликается проблема?</h2>
+                        <p class="selection__content">Поможем подобрать специалиста по работе с подобным запросом</p>
+                        <button class="selection__btn">Подобрать психолога</button>
+                    </div>
+                </div>
+                <div class="marketing">
+                    <article class="card__marketing ">
+                        <img src="./image/img_articles/marketing_card1.png" alt="Загружаем свободные окошки" class="marketing__card__img">
+                        <h4 class="marketing__card__title">Загружаем свободные окошки</h4>
+                        <p class="marketing__card__content">Все в порядке, сейчас мы перенаправим вас в сервис записи Qlick, через который удобно выбрать дату,  время встречи и оплатить её</p>
+                        <button class="marketing__card__btn marketing__card__btn__hover">Подробнее</button>
+                    </article>
+                    <article class="card__marketing">
+                        <div class="hashtags marketing__hashtags">
+                            <button class="hashtag__btn marketing__hashtag__link">
+                                <svg class="hashtag__icon marketing__icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="13" height="13" fill="url(#pattern0_39914_768)"/>
+                                    <defs>
+                                    <pattern id="pattern0_39914_768" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_39914_768" transform="scale(0.0078125)"/>
+                                    </pattern>
+                                    <image id="image0_39914_768" width="128" height="128" xlink:href="data:image/png;base64,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"/>
+                                    </defs>
+                                </svg>
+                                <span class="marketing__span">Переписка</span>
+                            </button>
+                            <button class="hashtag__btn marketing__hashtag__link">
+                                <svg class="hashtag__icon marketing__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_39909_691)">
+                                    <path d="M3.8875 11.205H0.96375C0.86 11.205 0.77125 11.1363 0.745 11.0363C0.66 10.71 0.5 9.87002 0.5 8.18627C0.5 6.62502 0.6375 5.98252 0.72625 5.73127C0.7575 5.64127 0.84375 5.58252 0.93875 5.58252H3.8875V11.205Z" fill="#37474F"/>
+                                    <path d="M8.26 5.25127L12.545 2.02002L13.7663 3.55002L11.4763 5.27627L8.26 5.25127Z" fill="#455A64"/>
+                                    <path d="M12.475 4.91113C12.475 4.68738 12.7537 4.50488 13.0987 4.50488C13.4425 4.50488 13.7225 4.68613 13.7225 4.91113C13.7212 5.13488 12.475 5.13488 12.475 4.91113Z" fill="#82AEC0"/>
+                                    <path d="M10.645 4.91113C10.645 4.68738 10.9238 4.50488 11.2688 4.50488C11.6125 4.50488 11.8925 4.68613 11.8925 4.91113C11.8913 5.13488 10.645 5.13488 10.645 4.91113Z" fill="#82AEC0"/>
+                                    <path d="M14.2263 14.6638H4.07375C3.505 14.6638 3.18 14.22 3.04375 13.6588C3.04375 13.6588 2.76 12.5538 2.76 9.88877C2.76 7.22377 3.04375 5.90002 3.04375 5.90002C3.10125 5.41752 3.505 4.89502 4.07375 4.89502H14.225C14.7938 4.89502 15.1913 5.25377 15.255 5.90002C15.255 5.90002 15.4988 7.29377 15.4988 9.80002C15.4988 12.3063 15.255 13.6588 15.255 13.6588C15.2563 14.2138 14.795 14.6638 14.2263 14.6638Z" fill="#546E7A"/>
+                                    <path d="M12.2337 2.26008C12.2337 2.26008 12.5712 2.43133 12.915 2.92008C13.2587 3.41008 13.45 3.80383 13.45 3.80383L14.2612 3.59883C14.3825 3.54008 14.4375 3.38383 14.3912 3.23258C14.325 3.01383 14.2275 2.61008 13.9125 2.17258C13.4637 1.54883 12.99 1.34383 12.8037 1.33758C12.7075 1.33383 12.6237 1.39133 12.5812 1.48633L12.2337 2.26008Z" fill="#37474F"/>
+                                    <path d="M13.7112 12.9487H5.53C5.21 12.9487 4.95125 12.69 4.95125 12.37V11.2437L4.32375 11.2487L4.3175 10.56L5.14625 10.5537H5.15C5.30125 10.5537 5.44125 10.6225 5.5375 10.7437C5.6075 10.8337 5.63875 10.9462 5.63875 11.06V12.26H13.3812L13.8375 12.9037C13.8025 12.9325 13.7575 12.9487 13.7112 12.9487Z" fill="#263238"/>
+                                    <path d="M4.3975 8.75488H5.35125" stroke="#82AEC0" stroke-width="32.975" stroke-miterlimit="10"/>
+                                    <path d="M13.3712 12.2614C13.3712 12.2614 13.4775 11.3801 13.4775 9.77886C13.4775 8.57511 13.2975 7.78011 13.2075 7.45886C13.1812 7.36386 13.0937 7.29886 12.995 7.29886H5.73625C5.54625 7.29886 5.105 6.61011 5.295 6.61011H13.405C13.5825 6.61011 13.74 6.72636 13.79 6.89761C13.9262 7.36761 14.1662 8.38886 14.1662 9.77886C14.1662 11.3701 13.9787 12.4401 13.8987 12.8064C13.8887 12.8539 13.8587 12.8926 13.8187 12.9164L13.3712 12.2614Z" fill="#82AEC0"/>
+                                    <path d="M4.27875 6.5849C4.50242 6.5849 4.68375 6.40358 4.68375 6.1799C4.68375 5.95623 4.50242 5.7749 4.27875 5.7749C4.05507 5.7749 3.87375 5.95623 3.87375 6.1799C3.87375 6.40358 4.05507 6.5849 4.27875 6.5849Z" fill="#F44336"/>
+                                    <path opacity="0.49" d="M0.958753 5.95618C0.768753 6.48493 0.727503 7.12993 0.761253 7.73368C0.766253 7.82368 0.842503 7.89368 0.933753 7.89493L2.28625 7.90993C2.38375 7.91118 2.4625 7.83118 2.4625 7.73368C2.46 7.18993 2.51125 6.58743 2.645 6.05118C2.6725 5.94118 2.58875 5.83618 2.47625 5.83618L1.12125 5.84243C1.04875 5.84243 0.982503 5.88743 0.958753 5.95618Z" fill="#82AEC0"/>
+                                    <path d="M1.545 11.2025C1.2825 9.34002 1.3175 7.30127 1.6375 5.58252H1.3875C1.07125 7.30627 1.03875 9.33877 1.29625 11.2025H1.545Z" fill="#82AEC0"/>
+                                    <path d="M1.34125 5.84009C1.2375 6.48384 1.165 7.21759 1.1375 7.89509L1.38375 7.89634C1.41125 7.21634 1.4875 6.48384 1.5925 5.84009H1.34125Z" fill="#B9E4EA"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_39909_691">
+                                    <rect width="16" height="16" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <span class="marketing__span">Видео</span>
+                            </button>
+                        </div>
+                        <img src="./image/img_articles/marketing_card2.png" alt="Лилия" class="marketing__card__foto">
+                        <h4 class="marketing__card__title">Лилия</h4>
+                        <p class="marketing__card__content">Психолог</p>
+                        <div class="experience__container">
+                            <span class="experience">Опыт 6 лет</span>
+                            <svg width="5" height="4" viewBox="0 0 5 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2" r="2" fill="#A2A7B1"/>
+                            </svg>
+                            <span class="experience">43 года</span>
+                        </div>
+                        <div class="price">
+                            <hr class="price__hr">
+                            <h4 class="price__title">С чем работает психолог</h4>
+                            <ul class="price__ul">
+                                <li class="price__li">Тревога, тревожности</li>
+                                <li class="price__li">Подавленность</li>
+                                <li class="price__li">Тревога и панические атаки</li>
+                            </ul>
+                        </div>
+                        <button class="marketing__card__btn"> Подробнее</button>
+                    </article>
+                    <div class="card__present__container">
+                        <img src="./image/img_articles/marketing_card3.png" alt="present" class="card__present__container__img">
+                        <a href="#">
+                            <article class="card__present">
+                                <h2 class="card__present__title">Дарите заботу</h2>
+                            </article>
+                        </a>
+                    </div>
+                    <article class="card__marketing__video__session">
+                        <img src="./image/img_articles/marketing_card4.png" alt="marketing" class="card__marketing__video__session__img">
+                        <h4 class="video__session__title">8 Видео сессий</h4>
+                        <p class="video__session__content">Проработать небольшие проблемы и продвинуться в решении сложных запросов</p>
+                        <p class="sale">18 500 ₽</p>
+                        <button class="video__session__btn">Купить</button>
+                    </article>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="contacts">
+                <nav class="footer__nav">
+                    <ul class="menu__footer__nav">
+                        <li class="item__menu__footer"><a href="#" class="link__menu__footer"><div class="border__bottom__footer"></div>О нас</a></li>
+                        <li class="item__menu__footer"><a href="#" class="link__menu__footer"><div class="border__bottom__footer"></div>Тарифы</a></li>
+                        <li class="item__menu__footer"><a href="#" class="link__menu__footer"><div class="border__bottom__footer"></div>Для бизнеса</a></li>
+                        <li class="item__menu__footer"><a href="#" class="link__menu__footer"><div class="border__bottom__footer"></div>Психологам</a></li>
+                        <li class="item__menu__footer"><a href="#" class="link__menu__footer"><div class="border__bottom__footer"></div>FAQ</a></li>
+                        <li class="item__menu__footer"><a href="#" class="link__menu__footer"><div class="border__bottom__footer"></div>Блог</a></li>
+                        <li class="item__menu__footer"><a href="#" class="link__menu__footer"><div class="border__bottom__footer"></div>Вебинары</a></li>
+                        <li class="item__menu__footer"><a href="#" class="link__menu__footer"><div class="border__bottom__footer"></div>Подскаст</a></li>
+                        <li class="item__menu__footer"><a href="#" class="link__menu__footer"><div class="border__bottom__footer"></div>Сертификат</a></li>
+                        <li class="item__menu__footer"><a href="#" class="link__menu__footer"><div class="border__bottom__footer"></div>Контакты</a></li>
+                    </ul>
+                </nav>
+                <form action="" class="form">
+                    <h2 class="form__title">Одно письмо в неделю со свежими новостями и акциями</h2>
+                    <div class="email">
+                    <input type="text" id="email" class="email__input" placeholder="Ваш e-mail">
+                    <label for="email" class="email__btn">
+                        <button class="icon__email__btn">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="icon__email__btn__svg" d="M3.5 13.0001H9.5V11.0001H3.5V1.84611C3.50001 1.75922 3.52267 1.67384 3.56573 1.59838C3.6088 1.52291 3.67078 1.45997 3.74558 1.41576C3.82037 1.37155 3.9054 1.34759 3.99227 1.34625C4.07915 1.34491 4.16487 1.36623 4.241 1.40811L22.703 11.5621C22.7814 11.6053 22.8468 11.6687 22.8923 11.7457C22.9378 11.8228 22.9618 11.9106 22.9618 12.0001C22.9618 12.0896 22.9378 12.1774 22.8923 12.2545C22.8468 12.3315 22.7814 12.3949 22.703 12.4381L4.241 22.5921C4.16487 22.634 4.07915 22.6553 3.99227 22.654C3.9054 22.6526 3.82037 22.6287 3.74558 22.5844C3.67078 22.5402 3.6088 22.4773 3.56573 22.4018C3.52267 22.3264 3.50001 22.241 3.5 22.1541V13.0001Z" fill="white" />
+                            </svg>
+                        </button>
+                    </label>
+                    </div>
+                    <span class="personal__data__processing">Подписываясь, я соглашаюсь на обработку персональных данных в соответствии с ФЗ РФ № 152-ФЗ «О персональных данных», а также с Политикой конфиденциальности</span>
+                </form>
+                <div class="socials">
+                    <svg width="221" height="50" viewBox="0 0 221 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_4492_2055)">
+                            <path d="M83.2307 23.751C86.2668 19.2628 87.1299 15.3838 85.7388 13.9927C85.3022 13.5662 84.6421 13.3428 83.779 13.3428C81.8801 13.3428 79.0775 14.409 75.9805 16.5008C77.2701 17.4959 78.5597 18.623 79.829 19.8923C81.0983 21.1616 82.2355 22.4512 83.2205 23.7408L83.2307 23.751Z" fill="white" />
+                            <path d="M69.646 19.9021C70.9152 18.6328 72.2049 17.4955 73.4945 16.5105C70.3974 14.4187 67.5948 13.3525 65.6959 13.3525C64.8429 13.3525 64.1728 13.5658 63.7361 14.0024C62.345 15.3936 63.2081 19.2624 66.2442 23.7607C67.2394 22.4711 68.3767 21.1815 69.6358 19.9122L69.646 19.9021Z" fill="white" />
+                            <path d="M82.3354 24.9998C81.3403 23.6695 80.1624 22.2987 78.8017 20.938C77.441 19.5773 76.0702 18.3994 74.74 17.4043C73.4098 18.3994 72.0389 19.5773 70.6782 20.938C69.3176 22.2987 68.1397 23.6695 67.1445 24.9998C68.1397 26.33 69.3176 27.7008 70.6782 29.0615C72.0389 30.4222 73.4098 31.6001 74.74 32.5952C76.0702 31.6001 77.441 30.4222 78.8017 29.0615C80.1624 27.7008 81.3403 26.33 82.3354 24.9998Z" fill="white" />
+                            <path d="M66.256 26.249C63.2198 30.7372 62.3567 34.6162 63.7478 36.0073C65.139 37.3985 69.0078 36.5354 73.5062 33.4891C72.2166 32.4939 70.927 31.3567 69.6577 30.0975C68.3884 28.8282 67.2511 27.5386 66.2661 26.249H66.256Z" fill="white" />
+                            <path d="M52.0269 0H12.2422C5.33723 0 -0.257812 5.59505 -0.257812 12.5V37.5C-0.257812 44.405 5.33723 50 12.2422 50H87.2422C94.1471 50 99.7422 44.405 99.7422 37.5V0H52.0269ZM49.7422 48.5378H12.2422C6.15974 48.5378 1.20441 43.5825 1.20441 37.5V12.5C1.20441 6.41755 6.15974 1.46223 12.2422 1.46223H49.7422V48.5378ZM86.7751 37.0329C86.0541 37.7539 85.0184 38.0991 83.7897 38.0991C81.3628 38.0991 78.1236 36.7689 74.7422 34.3928C71.3608 36.7689 68.1216 38.0991 65.6947 38.0991C64.4558 38.0991 63.4302 37.7539 62.7093 37.0329C60.5667 34.8903 61.7548 30.1076 65.3393 25C61.7548 19.8924 60.5667 15.1097 62.7093 12.9671C64.8519 10.8245 69.6346 12.0126 74.7422 15.5971C79.8498 12.0126 84.6325 10.8245 86.7751 12.9671C88.9177 15.1097 87.7296 19.8924 84.1451 25C87.7296 30.1076 88.9177 34.8903 86.7751 37.0329Z" fill="white" />
+                            <path d="M79.8407 30.0975C78.5714 31.3668 77.2818 32.5041 75.9922 33.4891C80.4804 36.5252 84.3594 37.3883 85.7505 36.0073C87.1417 34.6162 86.2785 30.7474 83.2424 26.249C82.2473 27.5386 81.11 28.8282 79.8508 30.0975H79.8407Z" fill="white" />
+                            <path d="M10.2926 15.2113C8.95222 16.8867 8.35312 19.1715 8.76945 21.0297C9.84581 25.8429 14.3137 26.6146 17.5936 27.0411C20.1829 27.3762 22.6606 27.8534 22.5997 30.1585C22.5286 32.5549 19.8275 33.1438 18.0505 33.1438C13.4303 33.1438 13.278 29.732 13.278 29.732H8.3125C8.38358 31.0114 8.76945 33.0728 10.3535 34.8396C12.0798 36.7791 14.6793 37.7539 18.0607 37.7539C20.6602 37.7539 23.0261 36.9111 24.7118 35.4083V37.4696H29.3421V31.5699L30.977 29.7726L35.6582 37.4696H41.0501L34.2365 26.2084L41.0501 18.745H35.0489L29.3421 25.0001V12.5001H24.7118V15.526C24.5595 15.3331 24.397 15.1402 24.2244 14.9472C22.5387 13.1601 20.1119 12.2563 17.0046 12.2563C13.4201 12.2563 11.3791 13.8607 10.2926 15.2113ZM17.0859 16.5923C19.1675 16.5923 21.2491 17.0594 22.0412 19.9533H24.7016V24.3806C21.3811 21.6491 14.1716 23.3652 13.3998 19.9635C12.9937 18.1763 14.7707 16.5923 17.0859 16.5923Z" fill="white" />
+                            <path d="M111.538 34.3421C111.852 34.4437 112.208 34.4944 112.624 34.4944C113.142 34.4944 113.558 34.3421 113.873 34.0273C114.188 33.7125 114.391 33.2962 114.493 32.8393L107.902 18.8872H112.289L116.513 28.8994L120.22 18.8872H124.393L118.453 32.6362C117.671 34.4538 116.869 35.8043 115.985 36.6573C115.102 37.5407 114.147 37.9774 113.081 37.9774C112.716 37.9774 112.431 37.9774 112.198 37.9266C111.934 37.8961 111.731 37.8454 111.548 37.7946L111.05 37.6423C110.918 37.5915 110.786 37.5407 110.664 37.5103V33.9867C110.898 34.139 111.182 34.271 111.517 34.3523L111.538 34.3421Z" fill="white" />
+                            <path d="M131.543 32.2707C131.279 32.3519 130.995 32.4027 130.69 32.4737C130.375 32.5245 130.04 32.5753 129.705 32.6058C129.37 32.6565 129.035 32.6565 128.72 32.6565C127.918 32.6565 127.238 32.5753 126.618 32.4534C126.019 32.3011 125.501 32.0879 125.085 31.7833C124.669 31.4685 124.354 31.0521 124.151 30.5343C123.948 30.0367 123.836 29.4173 123.836 28.6963V23.7207H127.41V27.9957C127.41 28.3815 127.461 28.7268 127.563 28.9502C127.644 29.2142 127.796 29.4173 127.999 29.5696C128.202 29.7219 128.436 29.8336 128.751 29.8844C129.065 29.9352 129.421 29.9656 129.837 29.9656C130.457 29.9656 130.924 29.9149 131.289 29.8133C131.655 29.6813 131.939 29.5493 132.142 29.4274V23.7207H135.717V37.5205H132.142V32.0777C131.99 32.1285 131.777 32.2097 131.523 32.2808L131.543 32.2707Z" fill="white" />
+                            <path d="M149.588 35.7945C149.619 36.0585 149.69 36.2921 149.771 36.4139C149.852 36.5967 149.923 36.6983 150.035 36.7795C150.137 36.8607 150.218 36.9115 150.35 36.9318V37.5005H146.38L146.176 36.8506C146.075 36.5866 146.044 36.2819 146.044 35.8859L145.242 36.6881C144.958 36.9217 144.674 37.1247 144.339 37.3075C144.003 37.4903 143.638 37.6426 143.201 37.7442C142.765 37.8457 142.247 37.8965 141.648 37.8965C141.049 37.8965 140.46 37.8152 139.932 37.6325C139.414 37.4497 138.977 37.1654 138.581 36.8303C138.215 36.4647 137.911 36.0281 137.698 35.4797C137.495 34.9619 137.383 34.3425 137.383 33.6418C137.383 33.0732 137.464 32.5553 137.647 32.0577C137.83 31.5602 138.083 31.154 138.398 30.7884C138.733 30.4229 139.129 30.1182 139.586 29.8847C140.053 29.6207 140.571 29.4684 141.17 29.3871L144.674 28.8693C144.806 28.8388 144.938 28.8388 145.09 28.788C145.242 28.7576 145.374 28.7068 145.506 28.6052C145.638 28.524 145.74 28.4225 145.821 28.2905C145.902 28.1381 145.953 27.9554 145.953 27.7218C145.953 27.4883 145.902 27.2852 145.852 27.1024C145.77 26.8993 145.648 26.7368 145.486 26.6048C145.303 26.4525 145.1 26.3408 144.816 26.2697C144.531 26.1885 144.166 26.1682 143.75 26.1682C143.252 26.1682 142.897 26.219 142.612 26.3002C142.298 26.4018 142.064 26.5642 141.912 26.7165C141.729 26.8993 141.597 27.1024 141.526 27.3156L141.373 28.0671H137.799C137.799 27.9148 137.83 27.6812 137.88 27.3664C137.931 27.0821 138.033 26.747 138.195 26.3814C138.327 26.0464 138.561 25.6808 138.815 25.3152C139.079 24.9497 139.414 24.6146 139.881 24.2998C140.297 24.0155 140.845 23.7515 141.465 23.5687C142.084 23.3859 142.815 23.2844 143.699 23.2539C144.917 23.2539 145.933 23.3859 146.705 23.6195C147.456 23.8835 148.055 24.2186 148.492 24.6044C148.908 25.0208 149.192 25.4574 149.345 25.955C149.477 26.4525 149.548 26.9399 149.548 27.4375V34.7486C149.548 35.165 149.578 35.5 149.629 35.7641L149.588 35.7945ZM145.283 31.0728C145.049 31.1743 144.765 31.2758 144.399 31.3368L143.445 31.5195C143.029 31.6008 142.663 31.6719 142.358 31.7836C142.044 31.8851 141.79 32.0171 141.577 32.1694C141.373 32.3522 141.211 32.5553 141.109 32.7888C141.008 33.0224 140.957 33.3067 140.957 33.6723C140.957 33.9566 141.008 34.2206 141.089 34.4237C141.191 34.6572 141.323 34.8096 141.505 34.972C141.658 35.104 141.841 35.236 142.054 35.2868C142.287 35.368 142.521 35.3883 142.785 35.3883C142.917 35.3883 143.1 35.3579 143.303 35.3376C143.506 35.3071 143.719 35.2563 143.973 35.1853C144.207 35.0837 144.44 34.9822 144.674 34.8197C144.907 34.6877 145.11 34.4846 145.293 34.2511C145.496 34.0175 145.659 33.7332 145.76 33.3676C145.862 33.0325 145.943 32.6365 145.943 32.1796V30.7783C145.74 30.9103 145.506 31.0118 145.293 31.0931L145.283 31.0728Z" fill="white" />
+                            <path d="M159.599 27.6298C159.498 27.3455 159.335 27.112 159.163 26.9292C158.959 26.7261 158.726 26.5941 158.462 26.4926C158.178 26.4113 157.842 26.3606 157.446 26.3606C156.847 26.3606 156.38 26.4926 156.025 26.7769C155.659 27.0612 155.375 27.3963 155.192 27.8126C154.989 28.2493 154.877 28.7164 154.806 29.2139C154.756 29.7115 154.705 30.1684 154.705 30.6152C154.705 31.062 154.735 31.5494 154.786 32.0368C154.837 32.5547 154.938 32.9913 155.152 33.4077C155.334 33.824 155.588 34.1896 155.984 34.4434C156.35 34.7277 156.837 34.8597 157.467 34.8597C157.883 34.8597 158.249 34.7785 158.553 34.5957C158.838 34.4434 159.102 34.2302 159.305 33.9966C159.508 33.7326 159.67 33.4788 159.772 33.1944C159.853 32.9304 159.904 32.6766 159.904 32.443H163.641C163.641 32.6766 163.61 32.9609 163.539 33.3264C163.438 33.7123 163.305 34.0779 163.123 34.4942C162.94 34.8801 162.686 35.2964 162.392 35.7127C162.057 36.129 161.691 36.4946 161.224 36.7992C160.757 37.1343 160.239 37.3983 159.619 37.6014C159 37.8045 158.269 37.9162 157.467 37.9162C156.431 37.9162 155.497 37.7639 154.695 37.4491C153.892 37.114 153.212 36.6469 152.674 36.0275C152.126 35.4081 151.709 34.6567 151.425 33.7225C151.141 32.8187 150.988 31.7728 150.988 30.6152C150.988 29.4576 151.141 28.3813 151.455 27.4775C151.77 26.5941 152.207 25.8224 152.775 25.1928C153.344 24.5734 154.024 24.1063 154.827 23.7915C155.609 23.4564 156.512 23.2939 157.477 23.2939C157.893 23.2939 158.33 23.3447 158.797 23.3955C159.234 23.4463 159.68 23.5783 160.117 23.7306C160.554 23.9134 160.97 24.1164 161.386 24.3805C161.772 24.6445 162.138 24.9796 162.473 25.3654C162.788 25.7513 163.041 26.2184 163.255 26.7363C163.458 27.2541 163.59 27.8736 163.641 28.5742H159.904C159.823 28.2086 159.751 27.8736 159.619 27.6197L159.599 27.6298Z" fill="white" />
+                            <path d="M176.109 23.7104V26.6146H171.935V37.5102H168.361V26.6146H164.188V23.7104H176.119H176.109Z" fill="white" />
+                            <path d="M186.061 28.6963V23.7207H189.635V37.5205H186.061V31.6106H180.801V37.5205H177.227V23.7207H180.801V28.6963H186.061Z" fill="white" />
+                            <path d="M195.664 32.2198L200.701 23.7104H204.458V37.5102H200.883V29.1836H200.833L195.959 37.5102H192.039V23.7104H195.613V32.2198H195.664Z" fill="white" />
+                            <path d="M215.651 23.7103H220.423L214.717 29.4374L220.657 37.5H215.986L211.944 31.6612L210.492 33.1437V37.5H206.918V23.7002H210.492V28.9398L215.651 23.7002V23.7103Z" fill="white" />
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_4492_2055">
+                            <rect width="221" height="50" fill="white" />
+                        </clipPath>
+                        </defs>
+                    </svg>
+                    <div class="socials__icons">
+                        <a href="#" class="link__socials">
+                            <svg class="link__socials__svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4492_2039)">
+                                <rect width="32" height="32" rx="16" fill="#EFF5FB"/>
+                                <g clip-path="url(#clip1_4492_2039)">
+                                <path class="path__icon" d="M25.8217 20.5411C25.768 20.4479 25.4355 19.6996 23.8353 18.1615C22.1602 16.551 22.3852 16.8125 24.4029 14.0277C25.6317 12.3318 26.123 11.296 25.9692 10.8533C25.823 10.4312 24.9192 10.5426 24.9192 10.5426L21.9139 10.5607C21.9139 10.5607 21.6914 10.5296 21.5252 10.6319C21.3639 10.7329 21.2601 10.9659 21.2601 10.9659C21.2601 10.9659 20.7839 12.2787 20.1488 13.3947C18.81 15.7496 18.2737 15.8739 18.0549 15.7276C17.5461 15.3871 17.6736 14.3579 17.6736 13.6277C17.6736 11.3452 18.0074 10.3937 17.0223 10.1477C16.6948 10.0661 16.4548 10.0118 15.6185 10.0027C14.5459 9.99105 13.6371 10.0066 13.1233 10.2668C12.7808 10.4403 12.517 10.8274 12.6783 10.8494C12.877 10.8766 13.3271 10.975 13.5658 11.3116C13.8746 11.7453 13.8634 12.7214 13.8634 12.7214C13.8634 12.7214 14.0409 15.4078 13.4496 15.7418C13.0433 15.971 12.487 15.5036 11.2932 13.3662C10.6819 12.2722 10.2193 11.0617 10.2193 11.0617C10.2193 11.0617 10.1306 10.8364 9.97182 10.716C9.77931 10.5698 9.50929 10.5231 9.50929 10.5231L6.65158 10.5413C6.65158 10.5413 6.2228 10.5542 6.06528 10.7471C5.92527 10.9193 6.05403 11.274 6.05403 11.274C6.05403 11.274 8.2917 16.6947 10.8244 19.4277C13.1483 21.9328 15.786 21.7684 15.786 21.7684H16.9811C16.9811 21.7684 17.3424 21.727 17.5261 21.5211C17.6961 21.3321 17.6899 20.9774 17.6899 20.9774C17.6899 20.9774 17.6661 19.3163 18.4112 19.0717C19.145 18.8309 20.0876 20.677 21.0864 21.3878C21.8414 21.925 22.4152 21.8072 22.4152 21.8072L25.0867 21.7684C25.0867 21.7684 26.4843 21.6791 25.8217 20.5411Z" fill="#333333"/>
+                                </g>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4492_2039">
+                                <rect width="32" height="32" fill="white"/>
+                                </clipPath>
+                                <clipPath id="clip1_4492_2039">
+                                <rect width="20" height="12" fill="white" transform="translate(6 10)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            </a>
+                        <a href="#" class="link__socials">
+                            <svg class="link__socials__svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4492_2043)">
+                                <rect width="32" height="32" rx="16" fill="#EFF5FB"/>
+                                <g clip-path="url(#clip1_4492_2043)">
+                                <path class="path__icon" d="M8.28261 15.7694L11.9693 17.1638L13.3963 21.8146C13.4876 22.1125 13.847 22.2226 14.0856 22.0249L16.1406 20.3271C16.3561 20.1492 16.6629 20.1404 16.888 20.306L20.5946 23.0331C20.8498 23.2211 21.2113 23.0794 21.2753 22.7669L23.9906 9.53073C24.0604 9.18936 23.7295 8.90457 23.4087 9.03029L8.27829 14.9455C7.9049 15.0914 7.90815 15.6272 8.28261 15.7694ZM13.1663 16.4215L20.3716 11.9242C20.5011 11.8437 20.6343 12.0211 20.5231 12.1256L14.5767 17.7273C14.3677 17.9245 14.2329 18.1883 14.1947 18.4747L13.9921 19.996C13.9653 20.1991 13.6837 20.2193 13.6284 20.0227L12.8494 17.2486C12.7602 16.9322 12.8902 16.5943 13.1663 16.4215Z" fill="#333333"/>
+                                </g>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4492_2043">
+                                <rect width="32" height="32" fill="white"/>
+                                </clipPath>
+                                <clipPath id="clip1_4492_2043">
+                                <rect width="16" height="14" fill="white" transform="translate(8 9)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="#" class="link__socials">
+                            <svg class="link__socials__svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4492_2047)">
+                                <rect width="32" height="32" rx="16" fill="#EFF5FB"/>
+                                <g clip-path="url(#clip1_4492_2047)">
+                                <path class="path__icon" d="M24.4702 10.7133C23.834 10.9947 23.1593 11.1795 22.4685 11.2616C23.1967 10.8261 23.7416 10.1408 24.0019 9.33327C23.3185 9.73994 22.5694 10.0249 21.7885 10.1791C21.264 9.61792 20.5688 9.24574 19.811 9.12043C19.0532 8.99511 18.2752 9.12368 17.5979 9.48615C16.9207 9.84862 16.3822 10.4247 16.0661 11.1248C15.7501 11.8249 15.6742 12.6098 15.8502 13.3574C14.4645 13.288 13.1088 12.9279 11.8713 12.3005C10.6337 11.6731 9.54198 10.7925 8.66688 9.71577C8.35712 10.2478 8.19434 10.8526 8.19521 11.4683C8.19521 12.6766 8.81021 13.7441 9.74521 14.3691C9.19188 14.3517 8.65074 14.2023 8.16688 13.9333V13.9766C8.16704 14.7814 8.44552 15.5613 8.95508 16.1842C9.46465 16.807 10.1739 17.2345 10.9627 17.3941C10.4491 17.5333 9.91046 17.5538 9.38771 17.4541C9.6101 18.1468 10.0435 18.7526 10.6274 19.1867C11.2112 19.6208 11.9161 19.8614 12.6435 19.8749C11.9206 20.4427 11.0929 20.8624 10.2076 21.1101C9.32236 21.3577 8.39698 21.4285 7.48438 21.3183C9.07746 22.3428 10.932 22.8867 12.826 22.8849C19.2369 22.8849 22.7427 17.5741 22.7427 12.9683C22.7427 12.8183 22.7385 12.6666 22.7319 12.5183C23.4143 12.0251 24.0032 11.4141 24.471 10.7141L24.4702 10.7133Z" fill="#333333"/>
+                                </g>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4492_2047">
+                                <rect width="32" height="32" fill="white"/>
+                                </clipPath>
+                                <clipPath id="clip1_4492_2047">
+                                <rect width="18" height="18" fill="white" transform="translate(7 7)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="#" class="link__socials">
+                            <svg class="link__socials__svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4492_2052)">
+                                <path d="M0 16C0 7.16343 7.16343 0 16 0C24.8366 0 32 7.16343 32 16C32 24.8366 24.8366 32 16 32C7.16343 32 0 24.8366 0 16Z" fill="#333333"/>
+                                <path class="path__icon dzen" fill-rule="evenodd" clip-rule="evenodd" d="M15.6762 0C15.6006 6.58251 15.1702 10.2664 12.7183 12.7183C10.2664 15.1702 6.58251 15.6006 0 15.6762V16.6315C6.58251 16.707 10.2664 17.1375 12.7183 19.5894C15.1317 22.0028 15.5866 25.6099 15.6724 32H16.6353C16.721 25.6099 17.1759 22.0028 19.5894 19.5894C22.0028 17.1759 25.6099 16.721 32 16.6353V15.6723C25.6099 15.5866 22.0028 15.1317 19.5894 12.7183C17.1375 10.2664 16.707 6.58251 16.6315 0H15.6762Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4492_2052">
+                                <rect width="32" height="32" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="juridical__info">
+                <span class="copy__juridical__info bottom__juridical__info">&copy;&nbsp;Youtalk, 2018 – 2022</span>
+                <a class="link__juridical__info bottom__juridical__info" href="#">Юридические документы</a>
+                <a class="link__juridical__info bottom__juridical__info" href="#">Способы оплаты</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
